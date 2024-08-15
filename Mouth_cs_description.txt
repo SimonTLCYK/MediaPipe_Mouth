@@ -1,0 +1,17 @@
+Mouth.cs process data obtained from MediaPipe Facemesh running in the scene, to provide access to scores representing how likely the shape of lips is the same as provided shapes
+
+To implement this, copy the sample scene 'Face Mesh' from Mediapipe asset to be the scene to be used, then attach Mouth.cs as component in any GameObject in the scene
+
+There are functions provided as seen inside region[functions providing data access for others] that can be accessed with 'Mouth.Instance.FunctionName()'
+
+For example, GetShapeCurrentScore(Mouth.ShapeType.A) returns to score of how likely the current mouth shape is 'A', in range of [-1,1], higher score means more likely, more information can be referred in source code
+
+For more customization, more shape types can be manually added in source code under Enum ‘ShapeType’, then create a new item in 'shapeScores' in inspector with the added shapeType. 
+'vars' represent how the variables considered from the shape of mouth are converted to score of likeliness, refer to source code on how weightings and curves are used in the calculation of scores
+
+There are also functions to set the base value of different shapes (the value of variables when the mouth is forming the specific shape) in two ways. 
+'SetBaseValue' that sets current values / avg value as base value. 
+'RecordBaseCoroutine' that sets a duration of time that records variable values then marks it as base values. 
+These base values are stored in PlayerPrefs and are loaded on awake.
+
+Mouth.cs can be directly implemented for other games requiring mouth shape recognition, and the same set of logic can be used for other shape recognition like body motion or hand gesture.
