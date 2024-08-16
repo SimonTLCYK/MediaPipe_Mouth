@@ -10,7 +10,7 @@ There are different mouth shapes: A(red), I(blue), U(green).
 
 Players need to reach a threshold score representing how likely the shape matches to be recognised as a specific shape. 
 
-Matching shape increases one point, game ends after a number of balls appear. 
+Matching shape adds one point, game ends after a number of balls appear. 
 
  
 ## Installation
@@ -23,3 +23,14 @@ Matching shape increases one point, game ends after a number of balls appear.
 This project depends on MediaPipe Unity Plugin (version: 0.14.4). 
 
 More information on how `Mouth.cs` utilize the data gathered from MediaPipe Facemesh to compute mouth shape score, please refer to documentation in [Assets/Scripts/Mouth.cs](https://github.com/SimonTLCYK/MediaPipe_Mouth/blob/main/Assets/Scripts/Mouth.cs) and description in [Mouth_cs_description.txt](https://github.com/SimonTLCYK/MediaPipe_Mouth/blob/main/Mouth_cs_description.txt).
+
+## Contributors
+<a href="https://github.com/Krumss">
+ <img alt="@Krumss" src="https://avatars.githubusercontent.com/u/50657802?v=4" width="50" height="50">
+ Krumss
+</a>
+<br>
+<a href="https://github.com/SimonTLCYK">
+ <img alt="@SimonTLCYK" src="https://avatars.githubusercontent.com/u/178161219?v=4" width="50" height="50">
+ SimonTLCYK
+</a>
