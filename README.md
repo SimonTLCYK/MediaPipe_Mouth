@@ -13,11 +13,13 @@ Players need to reach a threshold score representing how likely the shape matche
 Matching shape adds one point, game ends after a number of balls appear. 
 
  
-## Installation
+## Installation and Usage
 1. Unity Hub and Unity Editor version 2022.3.34f1 should be installed.
 2. [Download](https://github.com/SimonTLCYK/MediaPipe_Mouth/archive/refs/heads/main.zip) whole project and unzip.
 3. Naviagate in Unity Hub: 'Add' -> 'Add project from disk'.
 4. Select the extracted project folder.
+5. Open the project in editor and switch the scene to `Assets/Scenes/YumGame.unity`.
+6. Enter play mode to play.
 
 ## Remarks
 This project depends on MediaPipe Unity Plugin (version: 0.14.4). 
